@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
 import NewsItem from './NewsItem'
-import PropTypes from 'prop-types'
 
 const News = (props)=>{
     const [articles, setArticles] = useState([])
@@ -39,17 +38,5 @@ const News = (props)=>{
     
 }
 
-
-News.defaultProps = {
-    country: 'in',
-    pageSize: 8,
-    category: 'general',
-}
-
-News.propTypes = {
-    country: PropTypes.string,
-    pageSize: PropTypes.number,
-    category: PropTypes.string,
-}
 
 export default News
